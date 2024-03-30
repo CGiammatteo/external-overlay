@@ -13,7 +13,7 @@ void Drawing::DrawLine(HDC hdc, int x1, int y1, int x2, int y2, Gdiplus::Color c
 	graphics.~Graphics();
 }
 
-void Drawing::DrawBoundingBox(HDC hdc, int x, int y, int width, int height, Gdiplus::Color color, int boxSize)
+void Drawing::DrawBox(HDC hdc, int x, int y, int width, int height, Gdiplus::Color color, int boxSize)
 {
 	Gdiplus::Graphics graphics(hdc);
 	Gdiplus::Pen pen(color, boxSize);
@@ -25,8 +25,16 @@ void Drawing::DrawBoundingBox(HDC hdc, int x, int y, int width, int height, Gdip
 	graphics.~Graphics();
 }
 
-void Drawing::DrawCircle(HDC hdc, int x, int y, int radius, Gdiplus::Color color, int circleSize)
+void Drawing::DrawCircle(HDC hdc, int x, int y, int width, int height, Gdiplus::Color color, int circleSize)
 {
+	Gdiplus::Graphics graphics(hdc);
+	Gdiplus::Pen pen(color, circleSize);
+	Gdiplus::RectF rectangle(x, y, width, height);
+
+	graphics.DrawEllipse(&pen, rectangle);
+
+	pen.~Pen();
+	graphics.~Graphics();
 }
 
 void Drawing::Draw_Text(HDC hdc, const WCHAR* string, int x, int y, Gdiplus::Color color)

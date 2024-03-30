@@ -67,10 +67,12 @@ LRESULT CALLBACK Overlay::WndProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPa
             PAINTSTRUCT ps;
             HDC hdc = BeginPaint(hWnd, &ps);
             
-            //draw here
-            //Drawing::Draw_Text(hdc, L"OMG I LOVE CHEATZ", 100, 100, Gdiplus::Color(255, 255, 100, 0));
+            //draw here (examples below):
+
+            //Drawing::Draw_Text(hdc, L"COOL TEXT ALERT", 100, 100, Gdiplus::Color(255, 255, 100, 0));
             //Drawing::DrawBoundingBox(hdc, 100, 100, 200, 400, Gdiplus::Color(255, 0, 0, 255), 2);
             //Drawing::DrawLine(hdc, 500, 500, 800, 800, Gdiplus::Color(255, 0, 255, 100), 2);
+            //Drawing::DrawCircle(hdc, 100, 100, 200, 400, Gdiplus::Color(255, 0, 0, 255), 8);
 
             EndPaint(hWnd, &ps);
         }
