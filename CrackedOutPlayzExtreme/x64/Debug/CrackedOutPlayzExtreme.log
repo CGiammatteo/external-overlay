@@ -1,0 +1,7 @@
+﻿  PlayerClasses.cpp
+C:\Users\Gostr\source\repos\CrackedOutPlayzExtreme\CrackedOutPlayzExtreme\Cheat\Classes\PlayerClasses.cpp(131,65): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+C:\Users\Gostr\source\repos\CrackedOutPlayzExtreme\CrackedOutPlayzExtreme\Cheat\Classes\PlayerClasses.cpp(131,65): warning C4244:         with
+C:\Users\Gostr\source\repos\CrackedOutPlayzExtreme\CrackedOutPlayzExtreme\Cheat\Classes\PlayerClasses.cpp(131,65): warning C4244:         [
+C:\Users\Gostr\source\repos\CrackedOutPlayzExtreme\CrackedOutPlayzExtreme\Cheat\Classes\PlayerClasses.cpp(131,65): warning C4244:             T=uintptr_t
+C:\Users\Gostr\source\repos\CrackedOutPlayzExtreme\CrackedOutPlayzExtreme\Cheat\Classes\PlayerClasses.cpp(131,65): warning C4244:         ]
+  CrackedOutPlayzExtreme.vcxproj -> C:\Users\Gostr\source\repos\CrackedOutPlayzExtreme\x64\Debug\CrackedOutPlayzExtreme.exe
